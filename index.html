@@ -5,7 +5,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta name="description" content="Portfolio Cyber Security - Ethical Hacker & Security Specialist"/>
-  <title>Ro0t | Portfolio</title>
+  <!-- Ajoute dans <head> -->
+<meta name="keywords" content="cybersécurité, ethical hacker, pentesting, Python, sécurité informatique">
+<link rel="canonical" href="https://tonportfolio.com"><title>Ro0t | Portfolio</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
   <style>
     /* CYBER DARK THEME - ULTRA IMMERSIVE */
@@ -40,6 +42,8 @@
       overflow-x: hidden;
       position: relative;
     }
+
+    
 
     /* SCAN LINES EFFECT */
     body::before {
@@ -914,7 +918,7 @@
   <section id="accueil" class="hero section">
     <div class="hero-content">
       <h1 class="glitch">root@security:~$ <span class="highlight">ro0t</span></h1>
-      <h2>CYBERSECURITY SPECIALIST | PYTHON DEVELOPER</h2>
+      <h2>CYBERSECURITY  | PYTHON DEVELOPER</h2>
       <p class="terminal-text">> Analyse des vulnérabilités • Pentesting • Sécurité offensive • Python Development</p>
       <a href="#contact" class="btn">INITIALISER CONTACT</a>
     </div>
@@ -925,8 +929,8 @@
     <h2 class="section-title">// À PROPOS</h2>
     <div class="about-content">
       <div class="about-text">
-        <p>> Aprennant en Informatique en <span class="highlight"> deuxieme année (2)</span> je suis passionnné de la technologie et je me spécialise en Securité Informatique .</p>
-        <p>> Intermediaire dans la programation en Python , shell , en création de support audiovisuel(Infographie), et Junior en Devellopement web. Passionné(e) par la recherche des techniques d'attaque et de defense modernes.</p>
+        <p>Je me nomme <strong>Dylan Igor Yao Mawuenyegan ADIGBLI</strong>, je suis un étudiant en Informatique à L'Ecole Supérieure de Génie Informatique (ESGIS) de Lomé (Togo) et je suis passionné par la cybersécurité et le développement web.</p>
+        <p>> Intermediaire dans la programation en Python , shell , en création de support audiovisuel(Infographie), et Junior en Développement web. Passionné(e) par la recherche des techniques d'attaque et de defense modernes.</p>
         <p>> Plus ou moins actif dans les communautées CTF et participant aux HACKATON local.</p>
       </div>
       <div class="about-skills">
@@ -952,6 +956,7 @@
         <i class="fas fa-graduation-cap"></i>
         <h3>SECURITY </h3>
         <p>Formations, Simulations de phishing, Politiques de sécurité</p>
+        
       </div>
       <div class="skill-card">
         <i class="fas fa-video"></i>
@@ -1011,6 +1016,21 @@
   </footer>
 
   <script>
+    // OPTION 1: Forcer le retour en haut au chargement/actualisation de la page
+    window.addEventListener('load', () => {
+      window.scrollTo(0, 0);
+    });
+
+    // OPTION 2: Désactiver la restauration automatique du scroll par le navigateur
+    if ('scrollRestoration' in history) {
+      history.scrollRestoration = 'manual';
+    }
+
+    // OPTION 3: Forcer immédiatement au chargement (avant même que la page soit visible)
+    window.scrollTo(0, 0);
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
+
     // Menu mobile toggle
     const mobileMenu = document.getElementById('mobile-menu');
     const navLinks = document.querySelector('.nav-links');
